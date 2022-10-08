@@ -341,4 +341,22 @@
 
 #define SNIOC_GET_USTATE           _SNIOC(0x0092)
 
+/* IOCTL commands unique to the LTR308 */
+
+#define SNIOC_SET_CTRL             _SNIOC(0x0093) /* Arg: ltr308_ctrl_s *pointer */
+#define SNIOC_GET_CTRL             _SNIOC(0x0094) /* Arg: ltr308_ctrl_s *pointer */
+#define SNIOC_SET_MEASRATE         _SNIOC(0x0095) /* Arg: ltr308_measrate_s *pointer */
+#define SNIOC_GET_MEASRATE         _SNIOC(0x0096) /* Arg: ltr308_measrate_s *pointer */
+#define SNIOC_SET_GAIN             _SNIOC(0x0097) /* Arg: uint8_t value */
+#define SNIOC_GET_GAIN             _SNIOC(0x0098) /* Arg: uint8_t *pointer */
+#define SNIOC_GET_STATUS           _SNIOC(0x0099) /* Arg: ltr308_status_s *pointer */
+#define SNIOC_GET_DATA             _SNIOC(0x00a0) /* Arg: uint32_t *pointer */
+#define SNIOC_SET_INTRMODE         _SNIOC(0x00a1) /* Arg: bool value */
+#define SNIOC_GET_INTRMODE         _SNIOC(0x00a2) /* Arg: bool *pointer */
+#define SNIOC_SET_INTRPERS         _SNIOC(0x00a3) /* Arg: uint8_t value */
+#define SNIOC_GET_INTRPERS         _SNIOC(0x00a4) /* Arg: uint8_t *pointer */
+#define SNIOC_SET_THRESHOLD        _SNIOC(0x00a5) /* Arg: ltr308_threshold_s *pointer */
+#define SNIOC_GET_THRESHOLD        _SNIOC(0x00a6) /* Arg: ltr308_threshold_s *pointer */
+#define SNIOC_GET_LUX              _SNIOC(0x00a7) /* Arg: ltr308_lux_s *pointer */
+
 #endif /* __INCLUDE_NUTTX_SENSORS_IOCTL_H */
